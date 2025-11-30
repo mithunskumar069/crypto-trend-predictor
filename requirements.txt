@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+yfinance
+matplotlib
+scikit-learn
+prophet
+textblob
+newsapi-python
+tensorflow
