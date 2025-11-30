@@ -44,3 +44,16 @@ Combines all models into a single final prediction with:
 ---
 
 ## 📂 Project Structure
+├── app.py
+├── models/
+│   ├── lstm_model.h5
+│   └── prophet_model.pkl
+├── screenshots/
+│   ├── homepage.png
+│   └── demo.png
+├── data/
+│   └── crypto_price.csv
+├── notebooks/
+│   └── analysis.ipynb
+├── requirements.txt
+└── README.md
