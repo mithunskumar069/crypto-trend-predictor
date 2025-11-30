@@ -11,23 +11,24 @@ A machine learning project that predicts *next-day cryptocurrency prices* using:
 ## 📌 Features
 ### 🔮 1. LSTM Next-Day Prediction  
 Uses the last 60 days of closing prices to estimate the next day's price.
+![Screenshot 3](screenshots/Screenshot%20(3).png)
 
 
 ### 📊 2. Prophet Forecast  
 A statistical model that captures trend + seasonality to predict next-day value.
-
+![Screenshot 3](screenshots/Screenshot%20(3).png)
 
 ### 📰 3. Sentiment Analysis  
 Fetches the latest cryptocurrency-related news using *NewsAPI*,  
 analyzes sentiment using *TextBlob*, and adjusts prediction accordingly.
-
+![Screenshot 4](screenshots/Screenshot%20(4).png)
 
 ### 🎯 4. Final Ensemble Prediction  
 Combines all models into a single final prediction with:  
 - Final Price  
 - Trend (UP 📈 / DOWN 📉)  
 - Confidence Score
-  
+![Screenshot 6](screenshots/Screenshot%20(6).png)  
 
 ---
 
