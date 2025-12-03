@@ -10,6 +10,8 @@ from newsapi import NewsApiClient
 from prophet import Prophet
 import requests
 import warnings
+import streamlit as st
+
 warnings.filterwarnings("ignore")
 
 # -------------------------------
@@ -17,7 +19,7 @@ warnings.filterwarnings("ignore")
 # -------------------------------
 st.set_page_config(page_title="Crypto Trend Predictor", layout="wide")
 
-NEWSAPI_KEY = "fd607ccbdc374be6915167dca36820a3"   # <<< YOUR KEY HERE
+NEWSAPI_KEY = st.secrets["NEWSAPI_KEY"]  # <<< YOUR KEY HERE
 LSTM_EPOCHS = 10
 LOOKBACK = 60
 
@@ -264,5 +266,6 @@ confidence = round(
 st.metric("Final Predicted Price", f"${final_pred:,.4f}")
 st.metric("Trend", trend)
 st.metric("Confidence", f"{confidence}%")
+
 
 st.success("✔ Analysis complete – ready for interview demo!")
